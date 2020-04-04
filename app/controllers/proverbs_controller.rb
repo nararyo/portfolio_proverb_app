@@ -3,5 +3,6 @@ class ProverbsController < ApplicationController
   end
 
   def show
+    
   end
 end
