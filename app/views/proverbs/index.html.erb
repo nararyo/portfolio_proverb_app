@@ -1,18 +1,27 @@
-<p>「心が弱った時のひと言」にようこそ</p>
-<p>今はどんな気分でいらっしゃいますか？</p>
+<div class="container">
+  <div>
+    <p>名言の洞窟にようこそ</p>
+    <p>今はどんな気分でいらっしゃいますか？</p>
+  </div>
+  <div class="row">
 
-<div>
-  <%= link_to "疲れた", "/proverbs/tired" %>
+    <div class="proverb-container col-6 text-center py-5 ">
+      <%= link_to "疲れた、心が折れそう", "/proverbs/tired" %>
+    </div>
+    <div class="proverb-container col-6 text-center py-5">
+      <%= link_to "落ち込んでいる", "/proverbs/depress" %>
+    </div>
+    <div class="proverb-container col-6 text-center py-5">
+      <%= link_to "先行きが不安だ、迷っている、自信がない", "/proverbs/anxious" %>
+    </div>
+    <div class="proverb-container col-6 text-center py-5">
+      <%= link_to "特になんとも", "/proverbs/other" %>
+    </div>
+
+  </div>
 </div>
-<div>
-  <%= link_to "悲しい", "/proverbs/sad" %>
-</div>
-<div>
-  <%= link_to "落ち込んでる", "/proverbs/depress" %>
-</div>
-<div>
-  <%= link_to "自信がない", "/proverbs/anxious" %>
-</div>
-<div>
-  <%= link_to "喝を入れたい", "/proverbs/up" %>
-</div>
+<!--
+<% @proverbs.each_with_index do |proverb|  %>
+  <p><%= proverb.expression %></p>
+<% end  %>
+-->

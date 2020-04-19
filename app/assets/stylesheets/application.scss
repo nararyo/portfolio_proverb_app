@@ -1,1 +1,8 @@
 @import "bootstrap";
+
+.proverb-container {
+    border: 1px solid;
+    border-radius: 7px;
+    margin: 5px;
+    max-width: calc(50% - 30px);
+}
