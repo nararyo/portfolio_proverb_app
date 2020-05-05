@@ -1,8 +1,42 @@
 @import "bootstrap";
 
+body {
+    background-image: url(/images/stars.webp);
+    background-size: cover;
+    color: white;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
 .proverb-container {
     border: 1px solid;
     border-radius: 7px;
     margin: 5px;
     max-width: calc(50% - 30px);
+    background-color: rgb(113, 172, 199);
+    opacity: 0.8;
 }
+
+.proverb-link {
+    color: blanchedalmond;
+    font-size: 20px;
+}
+
+.proverb-expression {
+    animation: fadeIn  1s ease 0.3s 1 normal;
+    opacity: 0.9;
+    background-color: rgb(133, 219, 205);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: black;
+}
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+
+    0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  
+    100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+  
+  }

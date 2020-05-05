@@ -1,9 +1,13 @@
 class ProverbsController < ApplicationController
   def index
-    @proverbs = Proverb.all
+    @proverb = Proverb.where(feel: params[:feel])
   end
 
   def show
+    proverbs = Proverb.where(feel: params[:feel]).find_each.pluck(:expression, :who_said)
+    proverb = proverbs.sample
+    @expression = proverb[0]
+    @proverbed_by = proverb[1]
   end
 
   def anxious
